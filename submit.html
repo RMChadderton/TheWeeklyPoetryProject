@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manuscript Submission</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Manuscript Submission</h1>
+            <p><a href="/">&larr; Return to Introduction</a></p>
+        </header>
+        <hr>
+        <main>
+            <p>Please ensure your work adheres to the guidelines. One submission per author per weekly cycle.</p>
+            <form action="/submit" method="post">
+                <label for="author_name">Author's Name (or Pseudonym):</label>
+                <input type="text" id="author_name" name="author_name" required>
+
+                <label for="poem_title">Title of Work:</label>
+                <input type="text" id="poem_title" name="poem_title" required>
+
+                <label for="poem_body">Body of Work:</label>
+                <textarea id="poem_body" name="poem_body" rows="15" required></textarea>
+
+                <button type="submit" class="submit-button">Submit Manuscript</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
