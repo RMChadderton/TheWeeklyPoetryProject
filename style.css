@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Garamond:wght@400;700&family=Georgia&display=swap');
+
+body {
+    background-color: #FAF9F6; /* Off-white / Parchment */
+    color: #333333; /* Charcoal Grey */
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    padding: 2em 3em;
+}
+
+h1, h2 {
+    font-family: 'Garamond', serif;
+    font-weight: 700;
+    color: #000000;
+}
+
+a {
+    color: #800000; /* Maroon */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #EAEAEA;
+    margin: 2em 0;
+}
+
+/* Form Styling */
+label {
+    display: block;
+    margin-top: 1.5em;
+    font-family: 'Garamond', serif;
+    font-size: 1.1em;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    font-family: 'Georgia', serif;
+    font-size: 1em;
+    border: 1px solid #CCCCCC;
+    margin-top: 0.5em;
+}
+
+.submit-button {
+    background-color: #800000; /* Maroon */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Garamond', serif;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 1.5em;
+}
