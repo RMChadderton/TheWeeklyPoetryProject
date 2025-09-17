@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Archives - The Open Poetry Project</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container" style="grid-template-columns: 1fr;"> <header>
+            <p class="kicker">Archive of Laureates</p>
+            <h1>Project History</h1>
+            <p style="margin-top: 20px;"><a href="/">&larr; Return to Introduction</a></p>
+        </header>
+
+        <main class="main-content" style="border-right: none;">
+            
+            {% if winners %}
+                <ul class="schedule-list">
+                    {% for winner in winners %}
+                        <li>
+                            <strong>Winner for {{ winner['week_identifier'] }}:</strong><br>
+                            <em>"{{ winner['poem_title'] }}"</em> by {{ winner['author_name'] }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No selections have been archived yet. Please check back soon.</p>
+            {% endif %}
+
+        </main>
+    </div>
+</body>
+</html>
